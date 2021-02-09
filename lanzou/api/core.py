@@ -41,7 +41,7 @@ class LanZouCloud(object):
 
     def __init__(self):
         self._session = requests.Session()
-        self._limit_mode = True  # 是否保持官方限制
+        self._limit_mode = False  # 是否保持官方限制
         self._timeout = 15  # 每个请求的超时(不包含下载响应体的用时)
         self._max_size = 100  # 单个文件大小上限 MB
         self._upload_delay = (0, 0)  # 文件上传延时
